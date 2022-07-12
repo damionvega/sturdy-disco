@@ -1,0 +1,26 @@
+{
+  "name": "sturdy-disco",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damionvega/sturdy-disco.git"
+  },
+  "author": "Damion Vega",
+  "homepage": "https://github.com/damionvega/sturdy-disco#readme",
+  "main": "sync.js",
+  "scripts": {
+    "start": "node sync.js",
+    "server": "node server.js",
+    "test": "NODE_ENV=test mocha ./test",
+    "test:watch": "NODE_ENV=test mocha --watch ./ ./test"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0"
+  }
+}
